@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat"); /*Use this for font-family*/
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Media query*/
+@media only screen and (max-width: 510px) {
+  .grey-color i {
+    display: none;
+  }
+}
+
+/* Font sizes*/
+
+.font-size-h1 {
+  font-size: 64px;
+}
+
+.font-size-h2 {
+  font-size: 32px;
+}
+
+.font-size-h3 {
+  font-size: 20px;
+}
+
+/* Styled button*/
+
+.button {
+  border: none;
+  padding: 16px 32px;
+  margin-top: 30px;
+}
+
+/* Container of all aplication*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Main content*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/*Nav*/
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+.nav a {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav i {
+  margin-right: 2px;
+}
+
+/*Header*/
+
+.header {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header img {
+  height: auto;
+  max-width: 100%;
+}
+
+/*About*/
+
+.about {
+  margin-top: 50px;
+  max-width: auto;
+}
+
+.about p {
+  text-align: justify;
+  margin-bottom: 1px;
+}
+
+.about div {
+  margin-bottom: 1px;
+}
+
+/*My price*/
+
+.my-price-container {
+  justify-content: center;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.my-price {
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.my-price p {
+  text-align: center;
+}
+
+/*Form*/
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.form-container button {
+  margin: 10px;
+}
+
+.form-container input {
+  margin: 0;
+}
+
+/* My reputaion*/
+
+.my-reputation {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-reputation-comments {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+}
+
+.my-reputation img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.my-reputation p {
+  max-height: 80px;
+  overflow: hidden;
+}
+
+/* My photos*/
+
+.my-photos {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+.my-photos ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+}
+
+.my-photos li {
+  height: 40vh;
+  flex-grow: 1;
+}
+
+.my-photos img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+/*Contact*/
+
+.contact {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact div {
+  max-width: 1000px;
+}
+
+.contact-form {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-form input {
+  padding: 15px;
+  margin-bottom: 5px;
+}
+
+.contact-form button {
+  margin-top: 0px;
+}
+
+/* Sizes */
+
+#phone {
+  font-size: 30px;
+}
+
+#location {
+  font-size: 30px;
+}
+
+#email {
+  font-size: 30px;
+}
+
+#facebook {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#instagram {
+  font-size: 30px;
+}
+
+#linkedin {
+  font-size: 30px;
+}
+
+/* Colors*/
+
+.nav a:hover {
+  color: #818181ae;
+}
+
+.dark-grey-button {
+  color: #111;
+  background-color: #818181;
+}
+
+.dark-grey-button:hover {
+  background-color: #818181ae;
+  cursor: pointer;
+}
+
+.dark-background {
+  background-color: #111;
+}
+
+.grey-background {
+  background-color: #818181;
+}
+
+.dark-color {
+  color: #111;
+}
+
+.grey-color {
+  color: #818181;
+}
+
+.dark {
+  color: #111;
+}
+
+.dark:hover {
+  color: #818181;
+}
