@@ -39,8 +39,19 @@
         <header class="header">
           <h1 class="-font-size-h1">I'm Marlon Tancredo.</h1>
           <p>Web Developer.</p>
-          <img src="../img/marlon.jpg" alt="marlon" />
+          <img
+            id="marlon-image"
+            src="http://127.0.0.1:5500/portfolio/img/marlon.jpg"
+            alt="marlon"
+          />
         </header>
+        <button
+          id="save-marlon-image"
+          class="button dark-grey-button"
+          onclick="saveMarlonPicture()"
+        >
+          <i class="fa fa-floppy-o"></i> Save for later
+        </button>
 
         <!-- About me Section -->
         <div id="about"></div>
@@ -153,7 +164,7 @@
                 >
                 <div>
                   <button class="button dark-grey-button" type="submit">
-                    Sign Up
+                    <i class="fa fa-sign-in"></i>Sign Up
                   </button>
                 </div>
               </form>
@@ -297,6 +308,6 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="../index.js"></script>
   </body>
 </html>
