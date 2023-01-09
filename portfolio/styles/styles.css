@@ -15,7 +15,7 @@ a {
 }
 
 /*Media query*/
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 630px) {
   .grey-color i {
     display: none;
   }
