@@ -4,11 +4,7 @@
     <title>Portifolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="../styles/index-styles.css" />
   </head>
   <body class="dark-color">
     <!-- Nav Section -->
@@ -40,25 +36,23 @@
           <h1 class="-font-size-h1">I'm Marlon Tancredo.</h1>
           <p>Web Developer.</p>
           <img
-            id="marlon-image"
+            class="header img"
+            id="header-image"
             src="http://127.0.0.1:5500/portfolio/img/marlon.jpg"
             alt="marlon"
+            onclick="saveForLater(this.id, this.src)"
           />
         </header>
-        <button
-          id="save-marlon-image"
-          class="button dark-grey-button"
-          onclick="saveMarlonPicture()"
-        >
-          <i class="fa fa-floppy-o"></i> Save for later
-        </button>
 
         <!-- About me Section -->
         <div id="about"></div>
         <div class="about">
           <h2 class="-font-size-h2">Marlon Tancredo</h2>
           <hr style="margin: 0; width: 300px" />
-          <p>
+          <p
+            id="about-me-paragraph"
+            onclick="saveForLater(this.id, this.innerHTML)"
+          >
             Some text about me. Some text about me. I am lorem ipsum consectetur
             adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -71,243 +65,285 @@
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.
           </p>
-
-          <!-- My skills Section -->
-          <div class="my-skills">
-            <h3 class="-font-size-h3">My Skills</h3>
-            <p>JavaScript</p>
-            <div class="dark-background">
-              <div
-                class="grey-background"
-                style="height: 35px; width: 95%"
-              ></div>
-            </div>
-            <p>HTML</p>
-            <div class="dark-background">
-              <div
-                class="grey-background"
-                style="height: 35px; width: 90%"
-              ></div>
-            </div>
-            <p>CSS</p>
-            <div class="dark-background">
-              <div
-                class="grey-background"
-                style="height: 35px; width: 85%"
-              ></div>
-            </div>
+          <button class="like-button" onclick="likeButton()">
+            Like <i class="fa fa-thumbs-up"></i>
+          </button>
+        </div>
+        <!-- My skills Section -->
+        <div class="my-skills">
+          <h3 class="-font-size-h3">My Skills</h3>
+          <p>JavaScript</p>
+          <div class="dark-background">
+            <div class="grey-background" style="height: 35px; width: 95%"></div>
           </div>
-          <div>
-            <button class="button dark-grey-button">
+          <p>HTML</p>
+          <div class="dark-background">
+            <div class="grey-background" style="height: 35px; width: 90%"></div>
+          </div>
+          <p>CSS</p>
+          <div class="dark-background">
+            <div class="grey-background" style="height: 35px; width: 85%"></div>
+          </div>
+        </div>
+        <div>
+          <a href="../doc/daksMarlonTancredoCV.pdf" download="MarlonCV"
+            ><button class="button dark-grey-button">
               <i class="fa fa-download"></i> Download Resume
-            </button>
-          </div>
-          <h3 class="-font-size-h3">My price</h3>
+            </button></a
+          >
+        </div>
 
-          <!-- My Price Section -->
-          <div class="my-price-container">
-            <table class="my-price dark-background grey-color">
-              <tr>
-                <td><h3 class="font-size-h3">Basic</h3></td>
-              </tr>
-              <tr>
-                <td>Web Design</td>
-              </tr>
-              <tr>
-                <td>Photography</td>
-              </tr>
-              <tr>
-                <td>5GB Storage</td>
-              </tr>
-              <tr>
-                <td>Mail Support</td>
-              </tr>
-              <tr>
-                <td><h2 class="-font-size-h2">£ 15</h2></td>
-              </tr>
-              <tr>
-                <td><p>per month</p></td>
-              </tr>
-            </table>
-            <table class="my-price dark-background grey-color">
-              <tr>
-                <td><h3 h3 class="font-size-h3">Pro</h3></td>
-              </tr>
-              <tr>
-                <td>Web Design</td>
-              </tr>
-              <tr>
-                <td>Photography</td>
-              </tr>
-              <tr>
-                <td>50GB Storage</td>
-              </tr>
-              <tr>
-                <td>Endless Suport</td>
-              </tr>
-              <tr>
-                <td><h2 class="-font-size-h2">£ 35</h2></td>
-              </tr>
-              <tr>
-                <td><p>per month</p></td>
-              </tr>
-            </table>
-          </div>
-          <div class="form-container">
-            <div>
-              <form target="_blank" action="/action_page.php">
-                <input type="radio" name="fav-language" /><label for="basic"
-                  >Basic</label
-                >
-                <input type="radio" name="fav-language" /><label for="pro"
-                  >Pro</label
-                >
-                <div>
-                  <button class="button dark-grey-button" type="submit">
-                    <i class="fa fa-sign-in"></i>Sign Up
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
+        <h3 class="-font-size-h3">My price</h3>
 
-          <!-- My reputation Section -->
-          <div class="my-reputation">
-            <h3 class="-font-size-h3">My Reputation</h3>
-            <div class="my-reputation-comments">
-              <div>
-                <img src="../img/pug.jpg" alt="dog" />
-              </div>
-              <div>
-                <p>Marlon saved us from a web disaster.</p>
-              </div>
-            </div>
-            <div class="my-reputation-comments">
-              <div>
-                <img src="../img/dog-doctor.jpg" alt="dog" />
-              </div>
-              <div>
-                <p>
-                  No one is better than Marlon.No one is better than Marlon. No
-                  one is better than Marlon. No one is better than Marlon.No one
-                  is better than Marlon. No one is better than Marlon.No one is
-                  better than Marlon.No one is better than Marlon. No one is
-                  better than Marlon. No one is better than Marlon.No one is
-                  better than Marlon. No one is better than Marlon.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Photos Section -->
-          <div id="photos"></div>
-          <div class="my-photos">
-            <h3 class="font-size-h3">My Photos</h3>
-            <ul>
-              <li>
-                <img src="../img/dog-doctor.jpg" alt="" />
-              </li>
-              <li>
-                <img src="../img/pug.jpg" alt="" />
-              </li>
-              <li>
-                <img src="../img/t-shirt-dog.jpg" alt="" />
-              </li>
-              <li>
-                <img src="../img/white-dog.jpg" alt="" />
-              </li>
-              <li>
-                <img src="../img/birthday-dog.jpg" alt="" />
-              </li>
-            </ul>
-          </div>
-
-          <!-- Contact Section -->
-          <div id="contact">
-            <h2 class="-font-size-h2">Contact Me</h2>
-            <hr style="margin: 0; width: 200px" />
-            <div>
-              <p>
-                <i class="fa fa-map-marker fa-fw" id="location"></i>
-                London, Uk
-              </p>
-              <p>
-                <i class="fa fa-phone fa-fw" id="phone"></i>
-                Phone: +44 07907 497436
-              </p>
-              <p>
-                <i class="fa fa-envelope fa-fw" id="email"> </i>
-                Email: marlon_tancredo@hotmail.com
-              </p>
-            </div>
-            <br />
-            <p>Let's get in touch. Send me a message:</p>
-
-            <!-- Form Contact Section -->
-            <form
-              class="contact-form"
-              action="/action_page.php"
-              target="_blank"
-            >
-              <input type="text" placeholder="Name" required name="Name" />
-
-              <input type="text" placeholder="Email" required name="Email" />
-
+        <!-- My Price Section -->
+        <div class="my-price-container">
+          <table class="my-price dark-background grey-color">
+            <tr>
+              <td><h3 class="font-size-h3">Basic</h3></td>
+            </tr>
+            <tr>
+              <td>Web Design</td>
+            </tr>
+            <tr>
+              <td>Photography</td>
+            </tr>
+            <tr>
+              <td>5GB Storage</td>
+            </tr>
+            <tr>
+              <td>Mail Support</td>
+            </tr>
+            <tr>
+              <td><h2 class="-font-size-h2">£ 15</h2></td>
+            </tr>
+            <tr>
+              <td><p>per month</p></td>
+            </tr>
+          </table>
+          <table class="my-price dark-background grey-color">
+            <tr>
+              <td><h3 h3 class="font-size-h3">Pro</h3></td>
+            </tr>
+            <tr>
+              <td>Web Design</td>
+            </tr>
+            <tr>
+              <td>Photography</td>
+            </tr>
+            <tr>
+              <td>50GB Storage</td>
+            </tr>
+            <tr>
+              <td>Endless Suport</td>
+            </tr>
+            <tr>
+              <td><h2 class="-font-size-h2">£ 35</h2></td>
+            </tr>
+            <tr>
+              <td><p>per month</p></td>
+            </tr>
+          </table>
+        </div>
+        <div class="form-container">
+          <div>
+            <form>
               <input
-                type="text"
-                placeholder="Subject"
-                required
-                name="Subject"
-              />
-
+                id="Basic"
+                type="radio"
+                name="fav-language"
+                onchange="formSelected(this.id)"
+              /><label>Basic</label>
               <input
-                type="text"
-                placeholder="Message"
-                required
-                name="Message"
-              />
-              <button class="button dark-grey-button" type="submit">
-                <i class="fa fa-paper-plane"></i> SEND MESSAGE
-              </button>
+                id="Pro"
+                type="radio"
+                name="fav-language"
+                onchange="formSelected(this.id)"
+              /><label>Pro</label>
+              <div>
+                <button
+                  class="button dark-grey-button"
+                  onclick="signUpButton()"
+                >
+                  <i class="fa fa-sign-in"></i>Sign Up
+                </button>
+              </div>
             </form>
           </div>
-
-          <!-- Footer -->
-          <footer>
-            <a
-              target="_blank"
-              class="dark-color"
-              href="https://www.facebook.com/marlon.tancredo.juliana.arimura/"
-              ><i class="fa fa-facebook-official" id="facebook"></i
-            ></a>
-            <a
-              target="_blank"
-              class="dark-color"
-              href="https://www.instagram.com/marlontancredo/?hl=en"
-              ><i class="fa fa-instagram" id="instagram"></i
-            ></a>
-            <a
-              target="_blank"
-              class="dark-color"
-              href="https://www.linkedin.com/in/daks-marlon-tancredo-15a740145/"
-              ><i class="fa fa-linkedin" id="linkedin"></i
-            ></a>
-            <!-- <i class="fa fa-snapchat "></i> -->
-            <!-- <i class="fa fa-pinterest-p "></i> -->
-            <!-- <i class="fa fa-twitter "></i> -->
-            <p>
-              Powered by
-              <a
-                class="dark"
-                href="https://github.com/MarlonTancredo"
-                target="_blank"
-                >Marlon Tancredo</a
-              >
-            </p>
-          </footer>
         </div>
+
+        <!-- My reputation Section -->
+        <div id="my-reputation" class="my-reputation">
+          <h3 class="-font-size-h3">My Reputation</h3>
+          <div class="my-reputation-comments">
+            <div>
+              <img src="../img/pug.jpg" alt="dog" />
+            </div>
+            <div>
+              <p>Marlon saved us from a web disaster.</p>
+            </div>
+          </div>
+          <div class="my-reputation-comments">
+            <div>
+              <img src="../img/dog-doctor.jpg" alt="dog" />
+            </div>
+            <div>
+              <p>
+                No one is better than Marlon.No one is better than Marlon. No
+                one is better than Marlon.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="button dark-grey-button" onclick="leaveAComment()">
+          <i class="fa fa-comment" aria-hidden="true"></i>Leave a comment!
+        </button>
+
+        <!-- Photos Section -->
+        <div id="photos"></div>
+        <div class="my-photos">
+          <h3 class="font-size-h3">My Photos</h3>
+          <ul>
+            <li>
+              <img
+                class="img"
+                id="my-photos-1"
+                src="../img/dog-doctor.jpg"
+                alt="doctor"
+                onclick="saveForLater(this.id, this.src)"
+              />
+              <button class="like-button" onclick="likeButton()">
+                Like <i class="fa fa-thumbs-up"></i>
+              </button>
+            </li>
+            <li>
+              <img
+                id="my-photos-2"
+                src="../img/pug.jpg"
+                alt="pug"
+                onclick="saveForLater(this.id, this.src)"
+              />
+              <button class="like-button" onclick="likeButton()">
+                Like <i class="fa fa-thumbs-up"></i>
+              </button>
+            </li>
+            <li>
+              <img
+                id="my-photos-3"
+                src="../img/t-shirt-dog.jpg"
+                alt="t-shirt-dog"
+                onclick="saveForLater(this.id, this.src)"
+              />
+              <button class="like-button" onclick="likeButton()">
+                Like <i class="fa fa-thumbs-up"></i>
+              </button>
+            </li>
+            <li>
+              <img
+                id="my-photos-4"
+                src="../img/white-dog.jpg"
+                alt="white-dog"
+                onclick="saveForLater(this.id, this.src)"
+              />
+              <button class="like-button" onclick="likeButton()">
+                Like <i class="fa fa-thumbs-up"></i>
+              </button>
+            </li>
+            <li>
+              <img
+                id="my-photos-5"
+                src="../img/birthday-dog.jpg"
+                alt="birthday-dog"
+                onclick="saveForLater(this.id, this.src)"
+              />
+              <button class="like-button" onclick="likeButton()">
+                Like <i class="fa fa-thumbs-up"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact">
+          <h2 class="-font-size-h2">Contact Me</h2>
+          <hr style="margin: 0; width: 200px" />
+          <div>
+            <p>
+              <i class="fa fa-map-marker fa-fw" id="location"></i>
+              London, Uk
+            </p>
+            <p>
+              <i class="fa fa-phone fa-fw" id="phone"></i>
+              Phone: +44 07907 497436
+            </p>
+            <p>
+              <i class="fa fa-envelope fa-fw" id="email"> </i>
+              Email: marlon_tancredo@hotmail.com
+            </p>
+          </div>
+          <br />
+          <p>Let's get in touch. Send me a message:</p>
+
+          <!-- Form Contact Section -->
+          <form id="contact-form" class="contact-form">
+            <input id="name-form" type="text" placeholder="Name" required />
+
+            <input id="email-form" type="text" placeholder="Email" required />
+
+            <input
+              id="subject-form"
+              type="text"
+              placeholder="Subject"
+              required
+            />
+
+            <input
+              id="message-form"
+              type="text"
+              placeholder="Message"
+              required
+            />
+            <button class="button dark-grey-button" onclick="sendMessage()">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </form>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+          <a
+            target="_blank"
+            class="dark-color"
+            href="https://www.facebook.com/marlon.tancredo.juliana.arimura/"
+            ><i class="fa fa-facebook-official" id="facebook"></i
+          ></a>
+          <a
+            target="_blank"
+            class="dark-color"
+            href="https://www.instagram.com/marlontancredo/?hl=en"
+            ><i class="fa fa-instagram" id="instagram"></i
+          ></a>
+          <a
+            target="_blank"
+            class="dark-color"
+            href="https://www.linkedin.com/in/daks-marlon-tancredo-15a740145/"
+            ><i class="fa fa-linkedin" id="linkedin"></i
+          ></a>
+          <!-- <i class="fa fa-snapchat "></i> -->
+          <!-- <i class="fa fa-pinterest-p "></i> -->
+          <!-- <i class="fa fa-twitter "></i> -->
+          <p>
+            Powered by
+            <a
+              class="dark"
+              href="https://github.com/MarlonTancredo"
+              target="_blank"
+              >Marlon Tancredo</a
+            >
+          </p>
+        </footer>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     <script type="text/javascript" src="../index.js"></script>
   </body>
 </html>
