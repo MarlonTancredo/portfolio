@@ -1,5 +1,9 @@
-# portfolio
+# Final Capstone
 
-I have created an example of responsive portfolio just using HTML and CSS (flexbox).
+Project name: Portfolio
 
-To see the project just clone the repository and open the index on the browser.
+Description: This project is a sample of a protfolio made with HTML, CSS and Javascript.
+
+Installation: For installation just clone this repository into your local computer and open the index.html
+
+Credits: Made by Marlon Tancredo.
