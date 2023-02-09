@@ -1,14 +1,14 @@
 ### About
 
-![Alt text](./portfolio/img/readmeImg/about.png "About-section")
+![Alt text](./img/img/readmeImg/about.png "About-section")
 
 ### Photos
 
-![Alt text](./portfolio/img/readmeImg/photos.png "Photos-section")
+![Alt text](./img/readmeImg/photos.png "Photos-section")
 
 ### Contact
 
-![Alt text](./portfolio/img/readmeImg/contact.png "Contact-section")
+![Alt text](./img/readmeImg/contact.png "Contact-section")
 
 # Portfolio
 
