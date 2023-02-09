@@ -1,6 +1,6 @@
 ### About
 
-![Alt text](./img/img/readmeImg/about.png "About-section")
+![Alt text](./img/readmeImg/about.png "About-section")
 
 ### Photos
 
